@@ -1,14 +1,14 @@
-const book = { title: "Dune" };
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import BookText from "./components/BookText";
 
 function App() {
   return (
     <section className="page">
-      <header>
-        <h1>My Reading List</h1>
-        <p>This is my reading list</p>
-      </header>
+      <Header />
+      <div className="book-info"> <BookText /> </div>
       <main> </main>
-      <footer> I am the footer </footer>
+      <Footer />
     </section>
   );
 }
